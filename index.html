@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una descripción breve y clara de tu página web.">
+    <meta name="author" content="Tu Nombre o el de tu Empresa">
+
+    <title>Pedidos Mai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="items-navbar">
+        <div>
+                <img src="imagenes/icono-lupa.svg" width="40"  height="40" class="color-imagen"> 
+                <input type="text" name="buscador" id="busca algo..." size="170" maxlength="30"  class="buscador"> 
+          </div>  
+                <div>
+                   <button type="button" onclick="showDailog()">
+                    <img src="imagenes/icono-usuario.svg" width="40"  height="40">Mi perfil
+                  </button>
+                <img src="imagenes/icono-carrito.svg" width="40"  height="40"> </a>
+                </div>     
+               
+        
+    </header>
+
+    <main>
+            <dialog id="loginmodal">
+                Usuario: <input type="text" name="user"id="user">
+                password <input type="password" name="password"id="password">
+                <button type="button"onclick="closeDialog()">ingresar</button>
+
+            </dialog>
+        <div>
+            <h1 class="title">¿Que vas a ordenar hoy?</h1>
+            <h2 class="subtitle">Pedidos Faciles y Rapidos</h2>
+            <img src="imagenes/motmel.jpg" width="200"  height="200">
+        </div>
+            
+            <section class="cards">
+            <div>
+                <img src="imagenes/hamburgesa.jpg"width="220"  height="280" >
+                
+            </div>
+            <div>
+                <img src="imagenes/pizza.jpg"width="220"  height="280" >
+                
+            </div>
+            <div>
+                <img src="imagenes/empanadas.jpg"width="220"  height="280">
+                
+            </div>
+            <div>
+                <img src="imagenes/lomito.jpg"width="220"  height="280" >
+                
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="imagenes/icono-whatsapp.svg" width="40"  height="40"> 
+            <img src="imagenes/Instagram_icon-icons.com_66804.svg" width="40"  height="40">
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+    font-size: px 54;
+    color: #ff0000;
+}
+.subtitle{
+    text-align: center;
+    color: #000000;
+}
+.items-navbar {
+    display: flex;
+            justify-content: space-between;
+}
+.buscador {
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-color: red;
+    padding-top: 5px; 
+
+}
+.color-imagen{
+    fill: #ff0000;
+}
+.cards div{
+    display: flex;
+            justify-content: space-between;
+   
+}
+.cards{
+    column-count: 4;    
+}
