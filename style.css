@@ -1,15 +1,23 @@
 .title {
+    position: relative; right: -100px;
     text-align: center;
-    font-size: px 54;
-    color: #ff0000;
+    font-size: 72px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
 }
 .subtitle{
+    position: relative; right: -100px;
     text-align: center;
-    color: #000000;
+    position: relative; top: -30px; 
+    font-size: 56px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff0000;
 }
 .items-navbar {
     display: flex;
             justify-content: space-between;
+    
+    font-family: 'Montserrat', sans-serif;
 }
 .buscador {
     background-color: #ffffff;
@@ -21,11 +29,32 @@
 .color-imagen{
     fill: #ff0000;
 }
+.main{
+    padding-bottom: 20%;
+    overflow-x: hidden;
+
+}
 .cards div{
     display: flex;
             justify-content: space-between;
-   
+      position: relative; top: 0%;
+            
 }
 .cards{
-    column-count: 4;    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0px;
+    margin: -10px 15% 200px 250px ;    
+}
+.localr{
+    position: relative;
+    top: 1000px;
+    left: 40px;
+}
+.foter{
+    position: relative; bottom: 50%;
+    position: fixed; bottom: 0; left: 10px; 
+    
+
+    
 }
