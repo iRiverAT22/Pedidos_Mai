@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una descripción breve y clara de tu página web.">
+    <meta name="author" content="Tu Nombre o el de tu Empresa">
+
+    <title>Elegí Tu Hamburgesa</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="items-navbar">
+        <div>
+                <img src="imagenes/icono-lupa.svg" width="40"  height="40" class="color-imagen"> 
+                <input type="text" style="position: relative;top: -12px;" name="buscador" id="buscador" placeholder="Busca algo..." size="170" maxlength="30"  class="buscador"> 
+          </div>  
+                <div class="items-navbar">
+                   <button type="button" onclick="showDailog()">
+                    <img src="imagenes/icono-usuario.svg" width="40"  height="40">Mi perfil
+                  </button>
+                <img src="imagenes/icono-carrito.svg" width="40"  height="40"> </a>
+                </div>     
+               
+        
+    </header>
+
+    <main class="main">
+            <dialog id="loginmodal">
+                Usuario: <input type="text" name="user"id="user">
+                password <input type="password" name="password"id="password">
+                <button type="button"onclick="closeDialog()">ingresar</button>
+
+            </dialog>
+        <div>
+            <h1 class="title">Diseña Tu</h1>
+            <h2 class="subtitle">Hamburgesa</h2>
+            <img src="imagenes/motmel.jpg" width="305"  height="305" style="position: absolute;top: 50px; position: absolute; left: 50px;">
+        </div>
+            
+            <section class="carrito">
+            <div>
+                <img src="imagenes/hamburgesa.jpg"width="400"  height="500" >                
+            </div>
+                <ol>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox" name="checkbox" value="cheddar" checked>
+                            <label for="checkbox">Cheddar</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox2" name="checkbox2" value="bacon" checked>
+                            <label for="checkbox2">Bacon</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox3" name="checkbox3" value="mayonesa" checked>
+                            <label for="checkbox3">Mayonesa</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox4" name="checkbox4" value="lechuga" checked>
+                            <label for="checkbox4">Lechuga</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox5" name="checkbox5" value="tomate" checked>
+                            <label for="checkbox5">Tomate</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox6" name="checkbox6" value="cebolla" checked>
+                            <label for="checkbox6">Cebolla</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox7" name="checkbox7" value="huevo" checked>
+                            <label for="checkbox7">Huevo</label>
+                        </div>
+                    </li>
+                        <select class="lcheckbox" id="tamaño" name="tamaño">
+                            <option value="simple">Simple</option>
+                            <option value="doble">Doble</option>
+                            <option value="triple">Triple</option>
+                        </select>
+                </ol>
+             
+            
+            
+            
+        </section>
+        
+    </main>
+
+
+    <footer class="foter">
+        
+            <p><img src="imagenes/icono-whatsapp.svg" width="40"  height="40">
+            <img src="imagenes/Instagram_icon-icons.com_66804.svg" width="40"  height="40"></p>
+        
+    </footer>
+
+</body>
+</html>

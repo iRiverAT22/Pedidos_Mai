@@ -53,8 +53,30 @@
 }
 .foter{
     position: relative; bottom: 50%;
-    position: fixed; bottom: 0; left: 10px; 
-    
+    position: fixed; bottom: 0; left: 10px;    
+}
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}
+.carrito{
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 0px;
+    margin: -10px 15% 200px 250px ;    
+}
+.lcheckbox {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding-right: 10%;
+    margin-bottom: 10px;
 
-    
+
+}
+ol {
+  list-style-type: none;
+  margin-top: 10%;
+}
+.tscale {
+    transform: scale(2);
 }
