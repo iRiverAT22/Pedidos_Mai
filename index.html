@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Una descripción breve y clara de tu página web.">
     <meta name="author" content="Tu Nombre o el de tu Empresa">
-
+    <script type="text/javascript" src="functions.js"></script>
     <title>La carta imperial</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,18 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="body">
+        
 
     <header class="items-navbar">
+        
         <div>
-                <img src="imagenes/icono-lupa.svg" width="40"  height="40" class="color-imagen"> 
+                <img class src="imagenes/icono-lupa.svg" width="40"  height="40" class="color-imagen"> 
                 <input type="text" style="position: relative;top: -12px;" name="buscador" id="buscador" placeholder="Busca algo..." size="170" maxlength="30"  class="buscador"> 
           </div>  
                 <div class="items-navbar">
-                   <button type="button" onclick="showDailog()">
+                   <button type="button" onclick="showDialog()">
                 <img src="imagenes/icono-usuario.svg" width="20"  height="20" style="position: relative;top: 5px; position: relative; right: 5px;">Mi Perfil
                   </button>
                 <a href="carrito.html"><img src="imagenes/icono-carrito.svg" width="40"  height="40"> </a>
@@ -34,13 +36,18 @@
     </header>
 
     <main class="main">
-        <div><dialog id="loginmodal">
-                Usuario: <input type="text" name="user"id="user">
-                password <input type="password" name="password"id="password">
+        <p id="bienve"></p>
+        <dialog class="loginmodal" id="loginModal">
+                <p>Usuario: <input type="text" name="user"id="user"></p>
+                <p>Contraseña: <input type="password" name="password"id="password"></p>
                 <button type="button"onclick="closeDialog()">ingresar</button>
+                <p>O Registrate aquí: <input type="email" name="email" id="email" placeholder="example@e-mail.com" style="font-style: italic;"> </p>
+                <p>Crear Usuario: <input type="text" name="newuser"id="newuser"></p>
+                <p>Crear Contraseña: <input type="password" name="newpassword"id="newpassword"></p>
+                <button type="button"onclick="closeDialog()">Registrarse</button>
 
             </dialog>
-        </div>
+        
         <div>
             <h1 class="title">¿Que vas a ordenar hoy?</h1>
             <h2 class="subtitle">Pedidos Faciles y Rapidos</h2>
@@ -48,26 +55,22 @@
         </div>
             
             <section class="cards">
-            <div>
-                <a href="dphamburgesa.html"><img src="imagenes/hamburgesa.jpg"width="220"  height="280" ></a>
-                
+            <div class="cardsdiv">
+                <a href="dphamburgesa.html"><img class="cards" src="imagenes/hamburgesa.jpg"width="220"  height="280" ></a>
+                <h2>HAMBURGUESAS</h2>
             </div>
-            <div>
-                <a href="dppizza.html"><img src="imagenes/pizza.jpg"width="220"  height="280" ></a>
-                
+            <div class="cardsdiv">
+                <a href="dppizza.html"><img class="cards" src="imagenes/pizza.jpg"width="220"  height="280" ></a>
+                <h2>PIZZAS</h2>
             </div>
-            <div>
-                <img src="imagenes/empanadas.jpg"width="220"  height="280">
-                
+            <div class="cardsdiv">
+                <a href="dpempanadas.html"><img class="cards" src="imagenes/empanadas.jpg"width="220"  height="280"></a>
+                <h2>EMPANADAS</h2>
             </div>
-            <div>
-                <img src="imagenes/lomito.jpg"width="220"  height="280" >
-                
-            </div>
-            <div class="localr">
-                <img src="imagenes/pin ubicACION" width="60" height="60">
-            
-            </div>   
+            <div class="cardsdiv">
+                <img class="cards" src="imagenes/lomito.jpg"width="220"  height="280" >
+                <h2>LOMOS</h2>
+    
         </section>
     </main>
 
