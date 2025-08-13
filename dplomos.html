@@ -6,7 +6,7 @@
     <meta name="description" content="Una descripción breve y clara de tu página web.">
     <meta name="author" content="Tu Nombre o el de tu Empresa">
     <script type="text/javascript" src="functions.js"></script>
-    <title>Elegí Tu Pizza</title>
+    <title>Elegí Tu Lomo</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="calculateValuel()">
 
     <header class="items-navbar">
         <div>
@@ -42,64 +42,65 @@
             </dialog>
         <div>
             <h1 class="title">Diseña Tu</h1>
-            <h2 class="subtitle">Pizza</h2>
+            <h2 class="subtitle">Lomito</h2>
             <img src="imagenes/motmel.jpg" width="305"  height="305" style="position: absolute;top: 50px; position: absolute; left: 50px;">
         </div>
             
             <section class="carrito">
             <div class="cardsdiv">
-                <a href="dppizza.html"><img class="cardscarrito" src="imagenes/pizza.jpg"width="320"  height="380" ></a>
-                <h2>PIZZAS</h2>
+                <a href="dplomos.html"><img class="cardscarrito" src="imagenes/lomito.jpg"width="320"  height="380" ></a>
+                <h2>LOMO</h2>
             </div>
-            <form name="pizzasv">
+            <form name="lomosv">
                 <ol>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox">Muzzarella</label>
-                            <input type="number" class="numberscount" id="checkboxp" name="checkboxp" onchange="calculateValuep()" min=0>
-                            
+                            <input class="tscale" type="checkbox" id="checkbox" name="checkbox" onchange="calculateValuel()" value="checkbox" checked>
+                            <label for="checkbox">Queso</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                             <label for="checkbox2">Especial</label>
-                            <input type="number" class="numberscount" id="checkboxp2" name="checkboxp2" onchange="calculateValuep()" min=0>
-                           
+                            <input class="tscale" type="checkbox" id="checkbox2" name="checkbox2" onchange="calculateValuel()" value="checkbox2" checked>
+                            <label for="checkbox2">Jamon</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox3">Fugazzeta</label>
-                            <input type="number" class="numberscount" id="checkboxp3" name="checkboxp3" onchange="calculateValuep()" min=0>
-                            
+                            <input class="tscale" type="checkbox" id="checkbox3" name="checkbox3" onchange="calculateValuel()" value="checkbox3" checked>
+                            <label for="checkbox3">Mayonesa</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox4">Hongos</label>
-                            <input type="number" class="numberscount" id="checkboxp4" name="checkboxp4" onchange="calculateValuep()" min=0>
-                            
+                            <input class="tscale" type="checkbox" id="checkbox4" name="checkbox4" onchange="calculateValuel()" value="checkbox4" checked>
+                            <label for="checkbox4">Lechuga</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox5">Calabresa</label>
-                            <input type="number" class="numberscount" id="checkboxp5" name="checkboxp5" onchange="calculateValuep()" min=0>
+                            <input class="tscale" type="checkbox" id="checkbox5" name="checkbox5" onchange="calculateValuel()" value="checkbox5" checked>
+                            <label for="checkbox5">Tomate</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox6">4Quesos</label>
-                            <input type="number" class="numberscount" id="checkboxp6" name="checkboxp6" onchange="calculateValuep()" min=0>
+                            <input class="tscale" type="checkbox" id="checkbox6" name="checkbox6" onchange="calculateValuel()" value="checkbox6" checked>
+                            <label for="checkbox6">Cebolla</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
+                            <input class="tscale" type="checkbox" id="checkbox7" name="checkbox7" onchange="calculateValuel()" value="checkbox7" checked>
                             <label for="checkbox7">Huevo</label>
-                            <input type="number" class="numberscount" id="checkboxp7" name="checkboxp7" onchange="calculateValuep()" min=0>                            
                         </div>
                     </li>
-                        <h2>Precio Final <span id="finalPricep"></span></h2>
+                        <select class="lcheckbox" id="sizel" name="sizel" onchange="calculateValuel()">
+                            <option value="simple">Simple</option>
+                            <option value="doble">Doble</option>
+                            <option value="triple">Triple</option>
+                        </select>
+                        <h2>Precio Final <span id="finalPricel"></span></h2>
                 </ol>
                 <h3><button type="button" onclick="showDialogpe()">PAGAR</button></h3>
 
@@ -108,7 +109,8 @@
                     <p>El precio final es: <span id="finalPriceDialog"></span></p>
                     <button type="button" onclick="closeDialogpe()"><p>Finalizar pago</p></button>
                 </dialog>
-             </form>
+                </form>
+             
             
             
             

@@ -16,7 +16,7 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="calculateValueh()">
 
     <header class="items-navbar">
         <div>
@@ -51,56 +51,66 @@
                 <a href="dphamburgesa.html"><img class="cardscarrito" src="imagenes/hamburgesa.jpg"width="320"  height="380" ></a>
                 <h2>HAMBURGUESAS</h2>
             </div>
+            <form name="hamburgesasv">
                 <ol>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox" name="checkbox" value="cheddar" checked>
+                            <input class="tscale" type="checkbox" id="checkbox" name="cheddar" value="cheddar" onchange="calculateValueh()" checked>
                             <label for="checkbox">Cheddar</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox2" name="checkbox2" value="bacon" checked>
+                            <input class="tscale" type="checkbox" id="checkbox2" name="bacon" onchange="calculateValueh()" value="bacon" checked>
                             <label for="checkbox2">Bacon</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox3" name="checkbox3" value="mayonesa" checked>
+                            <input class="tscale" type="checkbox" id="checkbox3" name="mayonesa" onchange="calculateValueh()" value="mayonesa" checked>
                             <label for="checkbox3">Mayonesa</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox4" name="checkbox4" value="lechuga" checked>
+                            <input class="tscale" type="checkbox" id="checkbox4" name="lechuga" onchange="calculateValueh()" value="lechuga" checked>
                             <label for="checkbox4">Lechuga</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox5" name="checkbox5" value="tomate" checked>
+                            <input class="tscale" type="checkbox" id="checkbox5" name="tomate" onchange="calculateValueh()" value="tomate" checked>
                             <label for="checkbox5">Tomate</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox6" name="checkbox6" value="cebolla" checked>
+                            <input class="tscale" type="checkbox" id="checkbox6" name="cebolla" onchange="calculateValueh()" value="cebolla" checked>
                             <label for="checkbox6">Cebolla</label>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox7" name="checkbox7" value="huevo" checked>
+                            <input class="tscale" type="checkbox" id="checkbox7" name="huevo" onchange="calculateValueh()" value="huevo" checked>
                             <label for="checkbox7">Huevo</label>
                         </div>
                     </li>
-                        <select class="lcheckbox" id="tamaño" name="tamaño">
+                        <select class="lcheckbox" id="size" name="size" onchange="calculateValueh()">
                             <option value="simple">Simple</option>
                             <option value="doble">Doble</option>
                             <option value="triple">Triple</option>
                         </select>
+                    <h2>Precio Final <span id="finalPriceh"></span></h2>
                 </ol>
-             
+                <h3><button type="button" onclick="showDialogph()">PAGAR</button></h3>
+
+                <dialog class="loginModal" id="payModalh">
+                    <p>Número de la tarjeta: <input type="text" name="nroh" id="nroh"></p>
+                    <p>El precio final es: <span id="finalPriceDialogh"></span></p>
+                    <button type="button" onclick="closeDialogph()"><p>Finalizar pago</p></button>
+                </dialog>
+                </form>
+             <h2 class="subtitle" id="fin"></h2>
             
             
             

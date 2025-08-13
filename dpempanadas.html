@@ -6,7 +6,7 @@
     <meta name="description" content="Una descripción breve y clara de tu página web.">
     <meta name="author" content="Tu Nombre o el de tu Empresa">
     <script type="text/javascript" src="functions.js"></script>
-    <title>Elegí Tu Pizza</title>
+    <title>Elegí Tus Empanadas</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -27,92 +27,87 @@
                    <button type="button" onclick="showDailog()">
                     <img src="imagenes/icono-usuario.svg" width="40"  height="40">Mi perfil
                   </button>
-                <img src="imagenes/icono-carrito.svg" width="40"  height="40"> </a>
+                <img src="imagenes/icono-carrito.svg" width="40"  height="40"> 
                 </div>     
-               
-        
     </header>
 
     <main class="main">
-            <dialog id="loginmodal">
-                Usuario: <input type="text" name="user"id="user">
-                password <input type="password" name="password"id="password">
-                <button type="button"onclick="closeDialog()">ingresar</button>
-
-            </dialog>
+            
         <div>
             <h1 class="title">Diseña Tus</h1>
             <h2 class="subtitle">Empanadas</h2>
             <img src="imagenes/motmel.jpg" width="305"  height="305" style="position: absolute;top: 50px; position: absolute; left: 50px;">
         </div>
             
-            <section class="carrito">
+        <section class="carrito">
             <div class="cardsdiv">
-                <a href="dppizza.html"><img class="cardscarrito" src="imagenes/empanadas.jpg"width="320"  height="380" ></a>
-                <h2>PIZZAS</h2>
+                <a href="dpempanadas.html"><img class="cardscarrito" src="imagenes/empanadas.jpg"width="320"  height="380" ></a>
+                <h2>EMPANADAS</h2>
             </div>
+            <form name="empanadasv">
                 <ol>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkboxe" name="checkboxe" value="muzza">
-                            <label for="checkbox">Muzzarella</label>
+                            <label for="checkboxcar">Carne</label>
+                            <input type="number" class="numberscount" id="docenascar" name="docenascar" onchange="calculateValue()" min="0">
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox2e" name="checkbox2e" value="especial">
-                            <label for="checkbox2">Especial</label>
+                            <label for="checkbox2e">Especial</label>
+                            <input type="number" class="numberscount" id="docenase" name="docenase" onchange="calculateValue()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox3e" name="checkbox3e" value="fugazzeta">
-                            <label for="checkbox3">Fugazzeta</label>
+                            <label for="checkboxf">Fugazzeta</label>
+                            <input type="number" class="numberscount" id="docenasf" name="docenasf" onchange="calculateValue()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox4e" name="checkbox4e" value="hongos">
-                            <label for="checkbox4">Hongos</label>
+                            <label for="checkboxho">Hongos</label>
+                            <input type="number" class="numberscount" id="docenasho" name="docenasho" onchange="calculateValue()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox5e" name="checkbox5e" value="calabresa">
-                            <label for="checkbox5">Calabresa</label>
+                            <label for="checkboxc">Calabresa</label>
+                            <input type="number" class="numberscount" id="docenasc" name="docenasc" onchange="calculateValue()"min="0">
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox6e" name="checkbox6e" value="4quesos">
-                            <label for="checkbox6">4 Quesos</label>
+                            <label for="checkbox4q">4   Quesos</label>
+                            <input type="number" class="numberscount" id="docenas4" name="docenas4" onchange="calculateValue()"min="0">
                         </div>
                     </li>
                     <li>
-                        <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox7e" name="checkbox7e" value="huevop">
-                            <label for="checkbox7">Huevo</label>
+                        <div class="lcheckbox"> 
+                            <label for="checkboxh">Huevo</label>
+                            <input type="number" class="numberscount" id="docenash" name="docenash"  onchange="calculateValue()"min="0">
                         </div>
-                    </li>
-                    <div>
-                        <input type="number" class="lcheckbox" id="docenas" name="docenas" size="2">
-                    </div>    
-                </ol>7
-                
-             
-            
-            
-            
+                    </li> 
+                    <h2>Precio Final <span id="finalPrice"></span></h2>
+                </ol>
+                <h3><button type="button" onclick="showDialogpe()">PAGAR</button></h3>
+
+                <dialog class="loginModal" id="payModale">
+                    <p>Número de la tarjeta: <input type="text" name="nro" id="nro"></p>
+                    <p>El precio final es: <span id="finalPriceDialog"></span></p>
+                    <button type="button" onclick="closeDialogpe()"><p>Finalizar pago</p></button>
+                </dialog>
+            </form>
+            <h2 class="subtitle" id="fin"></h2>
         </section>
         
     </main>
 
-
     <footer class="foter">
-        
-            <p><img src="imagenes/icono-whatsapp.svg" width="40"  height="40">
-            <img src="imagenes/Instagram_icon-icons.com_66804.svg" width="40"  height="40"></p>
-        
+        <p>
+            <img src="imagenes/icono-whatsapp.svg" width="40"  height="40">
+            <img src="imagenes/Instagram_icon-icons.com_66804.svg" width="40"  height="40">
+        </p>
     </footer>
 
 </body>

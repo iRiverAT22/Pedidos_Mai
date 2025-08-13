@@ -2,6 +2,14 @@
     background-color: #ffffff;
     
 }
+.inter{
+    text-align: start;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-size: 42px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
 .title {
     position: relative; left: 10%;
     text-align: center;
@@ -39,6 +47,8 @@
 
 }
 .cardsdiv{
+    max-width: 320px;
+    max-height: 480px;
    color: #ffffff;
    text-align: center;
    font-family: 'Montserrat', sans-serif;
@@ -86,6 +96,14 @@
     font-size: 24px;
     margin-bottom: 12px;
 }
+.numberscount{
+    position: relative; left: 10%; 
+    width: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+    size: "2";
+}
 ol {
   list-style-type: none;
   margin-top: 10%;
@@ -94,6 +112,14 @@ ol {
     transform: scale(2);
 }
 .loginmodal {
+    margin: 20% auto;
+    line-height: 3;
+    background-color: #ffffff;
+    z-index: 10;
+    color: #0273E3;
+    
+}
+.paymodale {
     margin: 20% auto;
     line-height: 3;
     background-color: #ffffff;
