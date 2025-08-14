@@ -26,6 +26,52 @@ function closeDialogph(){
     document.getElementById("payModalh").style.display= "none";
     document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
 }
+function showDialogpp(){
+    const precio = document.getElementById("finalPricep").innerText;
+    document.getElementById("finalPriceDialogp").innerText = precio;
+    document.getElementById("payModalp").style.display= "block";
+}
+function closeDialogpp(){
+    document.getElementById("payModalp").style.display= "none";
+    document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
+}
+function showDialogpl(){
+    const precio = document.getElementById("finalPricel").innerText;
+    document.getElementById("finalPriceDialogl").innerText = precio;
+    document.getElementById("payModall").style.display= "block";
+}
+function closeDialogpl(){
+    document.getElementById("payModall").style.display= "none";
+    document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
+}
+function showDialogpt(){
+    const precio = document.getElementById("finalPricet").innerText;
+    document.getElementById("finalPriceDialogt").innerText = precio;
+    document.getElementById("payModalt").style.display= "block";
+}
+function closeDialogpt(){
+    document.getElementById("payModalt").style.display= "none";
+    document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
+}
+function showDialogpf(){
+    const precio = document.getElementById("finalPricef").innerText;
+    document.getElementById("finalPriceDialogf").innerText = precio;
+    document.getElementById("payModalf").style.display= "block";
+}
+function closeDialogpf(){
+    document.getElementById("payModalf").style.display= "none";
+    document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
+}
+function showDialogpta(){
+    const precio = document.getElementById("finalPriceta").innerText;
+    document.getElementById("finalPriceDialogta").innerText = precio;
+    document.getElementById("payModalta").style.display= "block";
+}
+function closeDialogpta(){
+    document.getElementById("payModalta").style.display= "none";
+    document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
+}
+
 
 function calculateValue(){
     let count=0;
@@ -132,4 +178,57 @@ function calculateValuel(){
     }  
      
     document.getElementById("finalPricel").innerText=price;
+}
+
+
+function calculateValuec(){
+    let count=0;
+    count += Number(cafesv.checkboxc.value);
+    count += Number(cafesv.checkboxc2.value);
+    count += Number(cafesv.checkboxc3.value);
+    count += Number(cafesv.checkboxc4.value);
+    count += Number(cafesv.checkboxc5.value);
+    count += Number(cafesv.checkboxc6.value);
+    count += Number(cafesv.checkboxc7.value);
+    document.getElementById("finalPricec").innerText=count*2100;
+}
+
+function showDialogpc(){
+    const precio = document.getElementById("finalPricec").innerText;
+    document.getElementById("finalPriceDialogc").innerText = precio;
+    document.getElementById("payModalc").style.display= "block";
+}
+function closeDialogpc(){
+    document.getElementById("payModalc").style.display= "none";
+    document.getElementById("fin").innerText ="Tu pedido fue enviado" + "!!!"
+}
+
+function calculateValuet(){
+    let count=0;
+    count += Number(tostadosv.checkboxt.value);
+    count += Number(tostadosv.checkboxt3.value);
+    count += Number(tostadosv.checkboxt4.value);
+    document.getElementById("finalPricet").innerText=count*4200;
+}
+
+function calculateValuef(){
+    let count=0;
+    count += Number(facturasv.checkboxf.value);
+    count += Number(facturasv.checkboxf2.value);
+    count += Number(facturasv.checkboxf3.value);
+    count += Number(facturasv.checkboxf4.value);
+    count += Number(facturasv.checkboxf5.value);
+    document.getElementById("finalPricef").innerText=count*700;
+}
+
+function calculateValueta(){
+    let count=0;
+    count += Number(tortasv.porcioncar.value);
+    count += Number(tortasv.porcione.value);
+    count += Number(tortasv.porcionf.value);
+    count += Number(tortasv.porcionho.value);
+    count += Number(tortasv.porcionc.value);
+    count += Number(tortasv.porcion4.value);
+    count += Number(tortasv.porcionh.value);
+    document.getElementById("finalPriceta").innerText=count*1420;
 }

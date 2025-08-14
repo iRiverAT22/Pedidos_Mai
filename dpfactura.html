@@ -6,7 +6,7 @@
     <meta name="description" content="Una descripción breve y clara de tu página web.">
     <meta name="author" content="Tu Nombre o el de tu Empresa">
     <script type="text/javascript" src="functions.js"></script>
-    <title>Elegí Tu Pizza</title>
+    <title>Elegí Tus facturas</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -38,76 +38,64 @@
 
             </dialog>
         <div>
-            <h1 class="title">Diseña Tu</h1>
-            <h2 class="subtitle">Pizza</h2>
+            <h1 class="title">Elegì Tus</h1>
+            <h2 class="subtitle">Facturas</h2>
             <img src="imagenes/motmel.jpg" width="305"  height="305" style="position: absolute;top: 50px; position: absolute; left: 50px;">
         </div>
             
             <section class="carrito">
             <div class="cardsdiv">
-                <a href="dppizza.html"><img class="cardscarrito" src="imagenes/pizza.jpg"width="320"  height="380" ></a>
-                <h2>PIZZAS</h2>
+                <a href="dpfactura.html"><img class="cardscarrito" src="imagenes/medialunas.jpg"width="320"  height="380" ></a>
+                <h2>Facturas</h2>
             </div>
-            <form name="pizzasv">
+            <form name="facturasv">
                 <ol>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox">Muzzarella</label>
-                            <input type="number" class="numberscount" id="checkboxp" name="checkboxp" onchange="calculateValuep()" min=0>
+                            <label for="checkboxf">Medialuna</label>
+                            <input type="number" class="numberscount" id="checkboxf" name="checkboxf" onchange="calculateValuef()" min=0>
                             
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                             <label for="checkbox2">Especial</label>
-                            <input type="number" class="numberscount" id="checkboxp2" name="checkboxp2" onchange="calculateValuep()" min=0>
+                             <label for="checkboxf2">Mafalda</label>
+                            <input type="number" class="numberscount" id="checkboxf2" name="checkboxf2" onchange="calculateValuef()" min=0>
                            
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox3">Fugazzeta</label>
-                            <input type="number" class="numberscount" id="checkboxp3" name="checkboxp3" onchange="calculateValuep()" min=0>
+                            <label for="checkboxf3">Vigilantes</label>
+                            <input type="number" class="numberscount" id="checkboxf3" name="checkboxf3" onchange="calculateValuef()" min=0>
                             
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox4">Hongos</label>
-                            <input type="number" class="numberscount" id="checkboxp4" name="checkboxp4" onchange="calculateValuep()" min=0>
+                            <label for="checkboxf4">Crema</label>
+                            <input type="number" class="numberscount" id="checkboxf4" name="checkboxf4" onchange="calculateValuef()" min=0>
                             
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox5">Calabresa</label>
-                            <input type="number" class="numberscount" id="checkboxp5" name="checkboxp5" onchange="calculateValuep()" min=0>
+                            <label for="checkboxf5">Churros</label>
+                            <input type="number" class="numberscount" id="checkboxf5" name="checkboxf5" onchange="calculateValuef()" min=0>
                         </div>
                     </li>
-                    <li>
-                        <div class="lcheckbox">
-                            <label for="checkbox6">4Quesos</label>
-                            <input type="number" class="numberscount" id="checkboxp6" name="checkboxp6" onchange="calculateValuep()" min=0>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="lcheckbox">
-                            <label for="checkbox7">Huevo</label>
-                            <input type="number" class="numberscount" id="checkboxp7" name="checkboxp7" onchange="calculateValuep()" min=0>                            
-                        </div>
-                    </li>
-                        <h2>Precio Final <span id="finalPricep"></span></h2>
+                    
+                        <h2>Precio Final <span id="finalPricef"></span></h2>
                 </ol>
-                <h3><button type="button" onclick="showDialogpp()">PAGAR</button></h3>
+                <h3><button type="button" onclick="showDialogpf()">PAGAR</button></h3>
 
-                <dialog class="payModalp" id="payModalp">
+                <dialog class="payModalf" id="payModalf">
                     <p>Número de la tarjeta: <input type="text" name="nro" id="nro"></p>
-                    <p>El precio final es: <span id="finalPriceDialogp"></span></p>
-                    <button type="button" onclick="closeDialogpp()"><p>Finalizar pago</p></button>
+                    <p>El precio final es: <span id="finalPriceDialogf"></span></p>
+                    <button type="button" onclick="closeDialogpf()"><p>Finalizar pago</p></button>
                 </dialog>
              </form>
-             <h2 class="subtitle" id="fin"></h2>
-            
+            <h2 class="subtitle" id="fin"></h2>
             
             
         </section>

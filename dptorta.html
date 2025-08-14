@@ -6,7 +6,7 @@
     <meta name="description" content="Una descripción breve y clara de tu página web.">
     <meta name="author" content="Tu Nombre o el de tu Empresa">
     <script type="text/javascript" src="functions.js"></script>
-    <title>Elegí Tus Empanadas</title>
+    <title>Elegí Tu Porcion</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -30,68 +30,68 @@
     <main class="main">
             
         <div>
-            <h1 class="title">Diseña Tus</h1>
-            <h2 class="subtitle">Empanadas</h2>
+            <h1 class="title">Diseña Tu</h1>
+            <h2 class="subtitle">Torta</h2>
             <img src="imagenes/motmel.jpg" width="305"  height="305" style="position: absolute;top: 50px; position: absolute; left: 50px;">
         </div>
             
         <section class="carrito">
             <div class="cardsdiv">
-                <a href="dpempanadas.html"><img class="cardscarrito" src="imagenes/empanadas.jpg"width="320"  height="380" ></a>
-                <h2>EMPANADAS</h2>
+                <a href="dptorta.html"><img class="cardscarrito" src="imagenes/tortas.jpg"width="320"  height="380" ></a>
+                <h2>PORCIONES</h2>
             </div>
-            <form name="empanadasv">
+            <form name="tortasv">
                 <ol>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkboxcar">Carne</label>
-                            <input type="number" class="numberscount" id="docenascar" name="docenascar" onchange="calculateValue()" min="0">
+                            <label for="porcioncar">Marquise</label>
+                            <input type="number" class="numberscount" id="porcioncar" name="porcioncar" onchange="calculateValueta()" min="0">
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox2e">Especial</label>
-                            <input type="number" class="numberscount" id="docenase" name="docenase" onchange="calculateValue()" min=0>
+                            <label for="porcion2e">LemonPie</label>
+                            <input type="number" class="numberscount" id="porcione" name="porcione" onchange="calculateValueta()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkboxf">Fugazzeta</label>
-                            <input type="number" class="numberscount" id="docenasf" name="docenasf" onchange="calculateValue()" min=0>
+                            <label for="porcionf">SelvaNegra</label>
+                            <input type="number" class="numberscount" id="porcionf" name="porcionf" onchange="calculateValueta()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkboxho">Hongos</label>
-                            <input type="number" class="numberscount" id="docenasho" name="docenasho" onchange="calculateValue()" min=0>
+                            <label for="porcionho">Tiramisu</label>
+                            <input type="number" class="numberscount" id="porcionho" name="porcionho" onchange="calculateValueta()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkboxc">Calabresa</label>
-                            <input type="number" class="numberscount" id="docenasc" name="docenasc" onchange="calculateValue()"min="0">
+                            <label for="porcionc">Rogel</label>
+                            <input type="number" class="numberscount" id="porcionc" name="porcionc" onchange="calculateValueta()"min="0">
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <label for="checkbox4q">4   Quesos</label>
-                            <input type="number" class="numberscount" id="docenas4" name="docenas4" onchange="calculateValue()"min="0">
+                            <label for="porcion4q">Cabsha</label>
+                            <input type="number" class="numberscount" id="porcion4" name="porcion4" onchange="calculateValueta()"min="0">
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox"> 
-                            <label for="checkboxh">Huevo</label>
-                            <input type="number" class="numberscount" id="docenash" name="docenash"  onchange="calculateValue()"min="0">
+                            <label for="porcionh">MilHojas</label>
+                            <input type="number" class="numberscount" id="porcionh" name="porcionh"  onchange="calculateValueta()"min="0">
                         </div>
                     </li> 
-                    <h2>Precio Final <span id="finalPrice"></span></h2>
+                    <h2>Precio Final <span id="finalPriceta"></span></h2>
                 </ol>
-                <h3><button type="button" onclick="showDialogpe()">PAGAR</button></h3>
+                <h3><button type="button" onclick="showDialogpta()">PAGAR</button></h3>
 
-                <dialog class="loginModal" id="payModale">
-                    <p>Número de la tarjeta: <input type="text" name="nro" id="nro"></p>
-                    <p>El precio final es: <span id="finalPriceDialog"></span></p>
-                    <button type="button" onclick="closeDialogpe()"><p>Finalizar pago</p></button>
+                <dialog class="loginModal" id="payModalta">
+                    <p>Número de la tarjeta: <input type="text" name="nro" id="nro" minlength="15" required></p>
+                    <p>El precio final es: <span id="finalPriceDialogta"></span></p>
+                    <button type="button" onclick="closeDialogpta()"><p>Finalizar pago</p></button>
                 </dialog>
             </form>
             <h2 class="subtitle" id="fin"></h2>

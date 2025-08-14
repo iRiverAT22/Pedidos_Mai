@@ -19,15 +19,12 @@
 <body onload="calculateValuel()">
 
     <header class="items-navbar">
-        <div>
-                <img src="imagenes/icono-lupa.svg" width="40"  height="40" class="color-imagen"> 
-                <input type="text" style="position: relative;top: -12px;" name="buscador" id="buscador" placeholder="Busca algo..." size="170" maxlength="30"  class="buscador"> 
-          </div>  
+        
                 <div class="items-navbar">
                    <button type="button" onclick="showDailog()">
-                    <img src="imagenes/icono-usuario.svg" width="40"  height="40">Mi perfil
+                    <a href="index.html"><img src="imagenes/icono-menuh.svg" width="40"  height="40">Home</a>
                   </button>
-                <img src="imagenes/icono-carrito.svg" width="40"  height="40"> </a>
+                
                 </div>     
                
         
@@ -102,15 +99,15 @@
                         </select>
                         <h2>Precio Final <span id="finalPricel"></span></h2>
                 </ol>
-                <h3><button type="button" onclick="showDialogpe()">PAGAR</button></h3>
+                <h3><button type="button" onclick="showDialogpl()">PAGAR</button></h3>
 
-                <dialog class="payModale" id="payModale">
+                <dialog class="payModall" id="payModall">
                     <p>Número de la tarjeta: <input type="text" name="nro" id="nro"></p>
-                    <p>El precio final es: <span id="finalPriceDialog"></span></p>
-                    <button type="button" onclick="closeDialogpe()"><p>Finalizar pago</p></button>
+                    <p>El precio final es: <span id="finalPriceDialogl"></span></p>
+                    <button type="button" onclick="closeDialogpl()"><p>Finalizar pago</p></button>
                 </dialog>
                 </form>
-             
+             <h2 class="subtitle" id="fin"></h2>
             
             
             

@@ -6,7 +6,7 @@
     <meta name="description" content="Una descripción breve y clara de tu página web.">
     <meta name="author" content="Tu Nombre o el de tu Empresa">
     <script type="text/javascript" src="functions.js"></script>
-    <title>Elegí Tu Hamburgesa</title>
+    <title>Elegí Tu Cafe</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body onload="calculateValueh()">
+<body>
 
     <header class="items-navbar">
         
@@ -24,6 +24,7 @@
                    <button type="button" onclick="showDailog()">
                     <a href="index.html"><img src="imagenes/icono-menuh.svg" width="40"  height="40">Home</a>
                   </button>
+                
                 </div>     
                
         
@@ -37,77 +38,75 @@
 
             </dialog>
         <div>
-            <h1 class="title">Diseña Tu</h1>
-            <h2 class="subtitle">Hamburgesa</h2>
+            <h1 class="title">Elegì Tu</h1>
+            <h2 class="subtitle">Cafe</h2>
             <img src="imagenes/motmel.jpg" width="305"  height="305" style="position: absolute;top: 50px; position: absolute; left: 50px;">
         </div>
             
             <section class="carrito">
             <div class="cardsdiv">
-                <a href="dphamburgesa.html"><img class="cardscarrito" src="imagenes/hamburgesa.jpg"width="320"  height="380" ></a>
-                <h2>HAMBURGUESAS</h2>
+                <a href="dpcafe.html"><img class="cardscarrito" src="imagenes/Cafe.jpg"width="320"  height="380" ></a>
+                <h2>Cafes</h2>
             </div>
-            <form name="hamburgesasv">
+            <form name="cafesv">
                 <ol>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox" name="cheddar" value="cheddar" onchange="calculateValueh()" checked>
-                            <label for="checkbox">Cheddar</label>
+                            <label for="checkbocx">Cortado</label>
+                            <input type="number" class="numberscount" id="checkboxc" name="checkboxc" onchange="calculateValuec()" min=0>
+                            
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox2" name="bacon" onchange="calculateValueh()" value="bacon" checked>
-                            <label for="checkbox2">Bacon</label>
+                             <label for="checkboxc2">Negro</label>
+                            <input type="number" class="numberscount" id="checkboxc2" name="checkboxc2" onchange="calculateValuec()" min=0>
+                           
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox3" name="mayonesa" onchange="calculateValueh()" value="mayonesa" checked>
-                            <label for="checkbox3">Mayonesa</label>
+                            <label for="checkboxc3">Espresso</label>
+                            <input type="number" class="numberscount" id="checkboxc3" name="checkboxc3" onchange="calculateValuec()" min=0>
+                            
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox4" name="lechuga" onchange="calculateValueh()" value="lechuga" checked>
-                            <label for="checkbox4">Lechuga</label>
+                            <label for="checkboxc4">Latte</label>
+                            <input type="number" class="numberscount" id="checkboxc4" name="checkboxc4" onchange="calculateValuec()" min=0>
+                            
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox5" name="tomate" onchange="calculateValueh()" value="tomate" checked>
-                            <label for="checkbox5">Tomate</label>
+                            <label for="checkboxc5">Americano</label>
+                            <input type="number" class="numberscount" id="checkboxc5" name="checkboxc5" onchange="calculateValuec()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox6" name="cebolla" onchange="calculateValueh()" value="cebolla" checked>
-                            <label for="checkbox6">Cebolla</label>
+                            <label for="checkboxc6">Capuccino</label>
+                            <input type="number" class="numberscount" id="checkboxc6" name="checkboxc6" onchange="calculateValuec()" min=0>
                         </div>
                     </li>
                     <li>
                         <div class="lcheckbox">
-                            <input class="tscale" type="checkbox" id="checkbox7" name="huevo" onchange="calculateValueh()" value="huevo" checked>
-                            <label for="checkbox7">Huevo</label>
+                            <label for="checkboxc7">Bombon</label>
+                            <input type="number" class="numberscount" id="checkboxc7" name="checkboxc7" onchange="calculateValuec()" min=0>                            
                         </div>
                     </li>
-                        <select class="lcheckbox" id="size" name="size" onchange="calculateValueh()">
-                            <option value="simple">Simple</option>
-                            <option value="doble">Doble</option>
-                            <option value="triple">Triple</option>
-                        </select>
-                    <h2>Precio Final <span id="finalPriceh"></span></h2>
+                        <h2>Precio Final <span id="finalPricec"></span></h2>
                 </ol>
-                <h3><button type="button" onclick="showDialogph()">PAGAR</button></h3>
+                <h3><button type="button" onclick="showDialogpc()">PAGAR</button></h3>
 
-                <dialog class="loginModal" id="payModalh">
-                    <p>Número de la tarjeta: <input type="text" name="nroh" id="nroh"></p>
-                    <p>El precio final es: <span id="finalPriceDialogh"></span></p>
-                    <button type="button" onclick="closeDialogph()"><p>Finalizar pago</p></button>
+                <dialog class="payModalc" id="payModalc">
+                    <p>Número de la tarjeta: <input type="text" name="nro" id="nro"></p>
+                    <p>El precio final es: <span id="finalPriceDialogc"></span></p>
+                    <button type="button" onclick="closeDialogpc()"><p>Finalizar pago</p></button>
                 </dialog>
-                </form>
-             <h2 class="subtitle" id="fin"></h2>
-            
+             </form>
+            <h2 class="subtitle" id="fin"></h2>
             
             
         </section>
