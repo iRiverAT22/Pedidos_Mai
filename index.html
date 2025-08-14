@@ -21,7 +21,7 @@
 
     <header class="items-navbar"> 
                 <div class="items-navbar">
-                   <button type="button" onclick="showDialog()">
+                   <button class="buttons" type="button" onclick="showDialog()">
                 <img src="imagenes/icono-usuario.svg" width="20"  height="20" style="position: relative;top: 5px; position: relative; right: 5px;">Mi Perfil
                   </button>
                 </div>
@@ -32,6 +32,7 @@
     <main class="main">
         <p id="bienve"></p>
         <dialog class="loginmodal" id="loginModal">
+            <h3>LogIn / SignUp</h3>
                 <p>Usuario: <input type="text" name="user"id="user"></p>
                 <p>Contraseña: <input type="password" name="password"id="password"></p>
                 <button type="button"onclick="closeDialog()">ingresar</button>
